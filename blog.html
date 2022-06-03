@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body> 
+    <header>
+        <h1> <a href="index.html">ConnorKemp</a></h1>
+        <nav class="nav">
+            <ul class="navbar">
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <button id="modalBtn" class="button">Contact</button>
+    </header>
+
+    <div class="modal" id="simpleModal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div class="modal-header">
+                <h1>Contact Me</h1>
+                <br>
+                <p>Business Email - connor.03.kemp@gmail.com</p>
+            </div>
+            <div class="modal-boxes">
+                <div class="modal-box">
+                    <a href="https://github.com/ConnorKemp" target="_blank"><img src="images/github.svg" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://steamcommunity.com/id/Snoopp0/" target="_blank"><img src="images/steami.png" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://www.twitch.tv/snoopp0x" target="_blank"><img src="images/twitch.png" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" width="55px"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="blog-page">
+        <div class="blog-section">
+            <div class="blog-post">
+                <h2>#savetf2</h2>
+                <h5>Connor Kemp | 03/06/2022</h5>
+                <iframe src="https://www.youtube.com/embed/synp7Y_b9sM" height="100%" width="1200px"></iframe>
+            </div>
+        </div>
+
+        <div class="blog-comment">
+            <div class="blog-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis accusantium reprehenderit esse vitae odio aspernatur eligendi similique. Dolor cumque veniam voluptatum illum obcaecati sequi reprehenderit suscipit quos, sapiente maxime.</p>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="modal.js"></script>
+</html>

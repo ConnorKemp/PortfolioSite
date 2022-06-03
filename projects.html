@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body> 
+    <header>
+        <h1><a href="index.html">ConnorKemp</a></h1>
+        <nav class="nav">
+            <ul class="navbar">
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <button id="modalBtn" class="button">Contact</button>
+    </header>
+
+    <div class="modal" id="simpleModal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div class="modal-header">
+                <h1>Contact Me</h1>
+                <br>
+                <p>Business Email - connor.03.kemp@gmail.com</p>
+            </div>
+            <div class="modal-boxes">
+                <div class="modal-box">
+                    <a href="https://github.com/ConnorKemp" target="_blank"><img src="images/github.svg" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://steamcommunity.com/id/Snoopp0/" target="_blank"><img src="images/steami.png" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://www.twitch.tv/snoopp0x" target="_blank"><img src="images/twitch.png" width="55px"></a>
+                </div>
+                <div class="modal-box">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" width="55px"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="projects-container"> 
+        <div class="container-boxes">
+            <div class="box1">
+                <img src="/images/steam.png" width="300px" height="300px">
+            </div>
+            <div class="box1">
+                <img src="/images/magic.jpg" width="300px" height="300px">
+            </div>
+            <div class="box1">
+                <img src="/images/IMG_0409.jpg" width="300px" height="300px">
+            </div>
+            <div class="box1">
+                <img src="/images/this.PNG" width="300px" height="300px">
+            </div>
+            <div class="box1">
+                <img src="/images/computer folder open.svg" width="300px" height="300px">
+            </div>
+        </div>
+    </div>
+    <div class="projects-desc"> 
+        <div class="desc-boxes">
+            <div class="box2">
+                <h1>Steam Trade Bot</h1>
+                <p>Setting up a Steam trade bot was one of my earliest opportunities to learn great technologies such as Linux, 
+                    SSH and basic JavaScript interpretation. It allowed me to interact with github repositories and introduced me to 
+                    PM2 as a process manager.
+                </p>
+                <p>You can check it out for yourself <a href="https://steamcommunity.com/id/snooppbot" target="_blank">here!</a></p>
+            </div>
+            <div class="box2">
+                <h1>Raspberry-Pi Magic Mirror</h1>
+                <p>This one was especially fun since it allowed me to combine physical and digital problem solving and configuration into a 
+                    gratifying solution that has purpose and usefulness in my life. This project was created using a Raspberry-Pi 3B+ and an 
+                    old monitor which I hacked together to create this. The Magic Mirror!
+
+                </p>
+                
+            </div>
+            <div class="box2">
+                <h1>Local KVM Server</h1>
+                <p>Here I gained deeper experience setting up, configuring and managing Linux and helped me understand networking relationships
+                    including virtual networking and using switches. 
+                </p>
+            </div>
+            <div class="box2">
+                <h1>This Website!</h1>
+                <p>This is where I discovered my passion for development and coding. Trying to create my online portfolio "because thats what 
+                    anyone in IT has" made me fall in love with web development and has become my current project focus since I am able to do 
+                    it any time with satisfying results. 
+                </p>
+                <p>You can check out my Source Code <a href="https://steamcommunity.com/id/snooppbot" target="_blank">here!</a></p>
+            </div>
+            <div class="box2">
+                <h1>Portfolio 2.0</h1>
+                <p>Coming soon with all the latest features and tricks i've learnt along the way!</p>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="modal.js"></script>
+</html>

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Nanum Gothic Coding;
+    background-color: #f87171;
+}
+
+li, a, button{
+    font-family: "Nanum Gothic Coding";
+    font-weight: 400;
+    font-size: 18px;
+    column-rule: #edf0f1;
+    text-decoration: none;
+    color: white;
+    text-shadow: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+.navbar li a:hover{
+    color: #006495;
+}
+
+.logo{
+    display: flex;
+    margin: 0;
+    position: fixed;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #006495;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+/* ------- */
+/* Modal */
+/* ------- */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+    max-height: 500px;
+    height: 200px;
+}
+.modal-content h1, p, .closeBtn{
+    background-color: #f4f4f4;
+    text-align: center;
+}
+@keyframes modalopen{
+    from{opacity: 0}
+    to {opacity: 1;}
+}
+
+.modal-header{
+    background-color: transparent;
+}
+
+.closeBtn{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: transparent;
+}
+.modal-box{
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+}
+.modal-boxes img, a{
+    background-color: transparent;
+}
+
+
+
+/* ------- */
+/* Body */
+/* ------- */
+
+.body-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+.about-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    gap: 20px;
+    font-family: Nanum Gothic Coding;
+}
+.about-paragraph img{
+    border-radius: 50%;
+    height: 100%;
+}
+.about-paragraph p{
+    background-color: transparent;
+}
+
+
+
+.about-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nanum Gothic Coding;
+}
+.link{
+    color: #edf0f1;
+    margin-top: 100px;
+}
+
+/* ------- */ 
+/* Projects */
+/* ------- */ 
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.box1{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+
+.projects-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.desc-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    gap: 10px;
+}
+.box2 h1{
+    margin-top: 10px;
+    color: #edf0f1;
+    gap: 10px;
+    margin: 5px;
+}
+.box2 p{
+    margin-top: 10px;
+    color: #edf0f1;
+    background-color: transparent;
+    gap: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.box2 a{
+    font-size: 25px;
+    color: #008fd5;
+}
+
+/* ------- */
+/*Blog*/
+/* ------- */
+
+.blog-page {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 100%vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.blog-section {
+    width: 70%;
+    margin: 10px;
+    height: 100%;
+    max-height: 97.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 90%;
+    height: 100%;
+    margin-top: 25px;
+    gap: 25px;
+}
+.blog-post p, h1, iframe{
+    background-color: transparent;
+    margin: 10px;
+}
+.blog-post p{
+    width: 1100px;
+    max-width: 1100px;
+    height: auto;
+    background-color: #ccc;
+}
+
+.blog-comment {
+    width: 30%;
+    margin: 10px;
+}
+.blog-text {
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 18px;
+
+}
+.blog-text p {
+    background-color: transparent;
+}
